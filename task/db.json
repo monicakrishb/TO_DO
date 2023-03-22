@@ -1,3 +1,97 @@
 {
-
+  "user": [
+    {
+      "name": "kjhgf",
+      "email": "monica123@gmail.com",
+      "pass": "kijhgfcdx",
+      "mobile": "ijhuygfds",
+      "id": 1
+    },
+    {
+      "name": "hjk",
+      "email": "monica@gmail.com",
+      "pass": "hhj",
+      "mobile": "b",
+      "id": 2
+    },
+    {
+      "name": "Kuralanban",
+      "email": "kural@gmail.com",
+      "pass": "Kural",
+      "mobile": "9003759065",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "",
+      "mobile": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "",
+      "mobile": "",
+      "id": 5
+    },
+    {
+      "name": "Sindhuja",
+      "email": "sindhu@gmail.com",
+      "pass": "Sindhu@13",
+      "mobile": "9003759065",
+      "id": 6
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "",
+      "mobile": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "jk",
+      "mobile": "",
+      "id": 8
+    },
+    {
+      "name": "Thenu",
+      "email": "7887@gmail.com",
+      "pass": "jk",
+      "mobile": "hjkl",
+      "id": 9
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "",
+      "mobile": "",
+      "id": 10
+    }
+  ],
+  "task":[
+{
+    "Taskname":"Task1",
+    "Description":"story",
+    "Duedate":"2023-03-22",
+    "Status":"completed",
+    "Priority":"High"
+},
+{
+    "Taskname":"Task1",
+    "Description":"story",
+    "Duedate":"2023-03-22",
+    "Status":"completed",
+    "Priority":"High"
+},
+{
+    "Taskname":"Task1",
+    "Description":"story",
+    "Duedate":"2023-03-22",
+    "Status":"completed",
+    "Priority":"High"
+}
+  ]
 }

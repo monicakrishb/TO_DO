@@ -1,14 +1,34 @@
 import React, { useState } from "react";
+import service from "../../services/API";
+import { useNavigate } from "react-router-dom";
+
 
 export const Register = () => {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
-  const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
+  
+    
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email);
+    let obj = { name:name, email:email, pass:pass, mobile:mobile };
+    console.log(obj);
+   service.registerpost(obj)
+    // axios.post("http://localhost:8000/user",obj)
+        .then((res) => {
+          // toast.success("registered successfully");
+          success();
+        })
+        .catch((err) => {
+          // toast.error("error");
+        });
+    
+  };
+  const success = () => {
+    navigate("/login");
   };
 
   return (
