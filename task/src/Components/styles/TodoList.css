@@ -1,11 +1,6 @@
-#create{
-    color:white;
-}
-.header{
-    height: 500px;
-    width: 100%;
-    background-color: #e9eef6;
-}
 #color{
+    color: black;
+}
+.title{
     color: black;
 }
