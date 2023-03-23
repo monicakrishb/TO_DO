@@ -1,28 +1,33 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import axios from "axios";
 
-export const CreateTask = ({ modal, toggle, save }) => {
-  const [taskName, setTaskName] = useState("");
+export const CreateTask = ({ modal,toggle }) => {
+  const [taskname, setTaskName] = useState("");
   const [description, setDescription] = useState("");
+  const [priority, setPriority] = useState("");
+  const [status, setStatus] = useState("");
+  const [duedate, setDuedate] = useState("");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    if (name === "taskName") {
-      setTaskName(value);
-    } else {
-      setDescription(value);
-    }
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let objtask = {
+      taskname: taskname,
+      description: description,
+      priority: priority,
+      status: status,
+      duedate: duedate,
+    };
+    console.log(objtask);
+    axios.post("http://localhost:8000/task", objtask);
   };
-  const handleSave = () => {
-    let taskObj = {};
-    taskObj["Name"] = taskName;
-    taskObj["Description"] = description;
-    save(taskObj);
-  };
+ 
 
   return (
     <Modal isOpen={modal} toggle={toggle}>
-      <ModalHeader toggle={toggle}>Create Task</ModalHeader>
+      <ModalHeader toggle={toggle}>Task</ModalHeader>
       <ModalBody>
         <form>
           <div className="form-group">
@@ -30,8 +35,8 @@ export const CreateTask = ({ modal, toggle, save }) => {
             <input
               type="text"
               className="form-control"
-              value={taskName}
-              onChange={handleChange}
+              value={taskname}
+              onChange={(e) => setTaskName(e.target.value)}
               name="taskName"
             />
           </div>
@@ -41,13 +46,18 @@ export const CreateTask = ({ modal, toggle, save }) => {
               rows="5"
               className="form-control"
               value={description}
-              onChange={handleChange}
+              onChange={(e) => setDescription(e.target.value)}
               name="description"
             ></textarea>
           </div>
           <div className="form-group">
-            <label>Task Name</label>
-            <select className="form-control" name="taskName">
+            <label>Priority</label>
+            <select
+              className="form-control"
+              name="taskName"
+              value={priority}
+              onChange={(e) => setPriority(e.target.value)}
+            >
               <option>set task priority</option>
 
               <option value="high">High</option>
@@ -58,21 +68,34 @@ export const CreateTask = ({ modal, toggle, save }) => {
           </div>
           <div className="form-group">
             <label>Status</label>
-            <select className="form-control" name="taskName">
+            <select
+              className="form-control"
+              name="taskName"
+              value={status}
+              onChange={(e) => setStatus(e.target.value)}
+            >
               <option>set status</option>
 
               <option value="completed">Completed</option>
 
               <option value="inprogress">Inprogress</option>
-              <option value="cancelled">
-                cancelled
-              </option>
+              <option value="cancelled">cancelled</option>
             </select>
+          </div>
+          <div className="form-group">
+            <label>Duedate</label>
+            <input
+              type="date"
+              className="form-control"
+              value={duedate}
+              onChange={(e) => setDuedate(e.target.value)}
+              name="taskName"
+            />
           </div>
         </form>
       </ModalBody>
       <ModalFooter>
-        <Button color="primary" onClick={handleSave}>
+        <Button onClick={handleSubmit} color="primary">
           create
         </Button>{" "}
         <Button color="secondary" onClick={toggle}>
