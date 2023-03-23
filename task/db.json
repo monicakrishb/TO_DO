@@ -69,29 +69,55 @@
       "pass": "",
       "mobile": "",
       "id": 10
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "",
+      "mobile": "",
+      "id": 11
     }
   ],
-  "task":[
-{
-    "Taskname":"Task1",
-    "Description":"story",
-    "Duedate":"2023-03-22",
-    "Status":"completed",
-    "Priority":"High"
-},
-{
-    "Taskname":"Task1",
-    "Description":"story",
-    "Duedate":"2023-03-22",
-    "Status":"completed",
-    "Priority":"High"
-},
-{
-    "Taskname":"Task1",
-    "Description":"story",
-    "Duedate":"2023-03-22",
-    "Status":"completed",
-    "Priority":"High"
-}
+  "task": [
+    {
+      "taskname": "Task1",
+      "description": "React",
+      "priority": "high",
+      "status": "inprogress",
+      "duedate": "2023-03-31",
+      "id": 1
+    },
+    {
+      "taskname": "Task2",
+      "description": "Angular",
+      "priority": "high",
+      "status": "completed",
+      "duedate": "2023-03-24",
+      "id": 2
+    },
+    {
+      "taskname": "Task3",
+      "description": "Python",
+      "priority": "high",
+      "status": "cancelled",
+      "duedate": "2023-03-31",
+      "id": 3
+    },
+    {
+      "taskname": "bnm",
+      "description": "jk",
+      "priority": "high",
+      "status": "inprogress",
+      "duedate": "2023-04-09",
+      "id": 4
+    },
+    {
+      "taskname": "Task6",
+      "description": "Login and Register",
+      "priority": "medium",
+      "status": "completed",
+      "duedate": "2023-03-21",
+      "id": 6
+    }
   ]
 }

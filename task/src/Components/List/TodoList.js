@@ -40,10 +40,10 @@ const TodoList = () => {
         {arraydata &&
           arraydata.map((e) => <Cards taskObj={e} />)}
       </div>
-      <div className="task-container">
+      {/* <div className="task-container">
         {arraydata &&
-          arraydata.map((e) => <Cards taskObj={ e.priority=="high"} />)}
-      </div>
+          arraydata.filter((e) => <Cards taskObj={ e.priority=="high" } />)}
+      </div> */}
       <CreateTask toggle={toggle} modal={modal} />
     </>
   );
