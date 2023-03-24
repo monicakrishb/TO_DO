@@ -4,12 +4,13 @@ import { CreateTask } from "../modals/CreateTask";
 import axios from "axios";
 import Cards from "./Cards";
 
-
 const TodoList = () => {
   const [modal, setModal] = useState(false);
-
   const [arraydata, setArraydata] = useState([]);
-
+  const [priority, setPriority] = useState("");
+  const highPriorityTasks = arraydata.filter((a) => {
+    return a.priority == "high";
+  });
   const toggle = () => {
     setModal(modal);
   };
@@ -17,12 +18,13 @@ const TodoList = () => {
     Data();
   }, []);
 
-  const Data = async () => {
-    const response = await axios.get("http://localhost:8000/task");
-    console.log(response);
+  const Data = async() => {
+    const response =await axios.get("http://localhost:8000/task");
+    // console.log(response.data);
     setArraydata(response.data);
+    // console.log("arraydata",arraydata);
+    console.log(highPriorityTasks);
   };
-
   return (
     <>
       <div className="header text-center">
@@ -35,15 +37,42 @@ const TodoList = () => {
           Create Task
         </button>
       </div>
-    <h1 className="title">Priority task</h1>
+      {/* <h1 className="title">Priority task</h1> */}
+
+      <h3 style={{color:'black'}}>Tasks In Priorities</h3>
+      <div className="task-container">
+
+{highPriorityTasks.map((e, index) => (
+  <Cards taskObj={e} index={index} />
+))}
+</div>
+<h3 style={{color:'black'}}>Categorize Your Tasks Here!</h3>
+      <select
+              className="form-control category"
+              id="category"
+              name="taskName"
+              value={priority}
+              onChange={(e) => setPriority(e.target.value)}
+            >
+              <option>set task priority</option>
+
+              <option value="high">High</option>
+
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+            </select>
+
+            <div className="task-container">
+     
+        {arraydata &&
+          arraydata.filter((e) => e.priority==priority).map((e)=> <Cards taskObj={e}  />)}
+      </div>
+
       <div className="task-container">
         {arraydata &&
-          arraydata.map((e) => <Cards taskObj={e} />)}
+          arraydata.map((e, index) => <Cards taskObj={e} index={index} />)}
       </div>
-      {/* <div className="task-container">
-        {arraydata &&
-          arraydata.filter((e) => <Cards taskObj={ e.priority=="high" } />)}
-      </div> */}
+     
       <CreateTask toggle={toggle} modal={modal} />
     </>
   );
