@@ -76,6 +76,20 @@
       "pass": "",
       "mobile": "",
       "id": 11
+    },
+    {
+      "name": "Sneha",
+      "email": "sneha@gmail.com",
+      "pass": "Sheha@13",
+      "mobile": "9003759065",
+      "id": 12
+    },
+    {
+      "name": "Monica",
+      "email": "monica@gmail.com",
+      "pass": "Moni@13",
+      "mobile": "9003759065",
+      "id": 13
     }
   ],
   "task": [
@@ -118,6 +132,46 @@
       "status": "completed",
       "duedate": "2023-03-21",
       "id": 6
+    },
+    {
+      "taskname": "Task8",
+      "description": "Java",
+      "priority": "low",
+      "status": "",
+      "duedate": "2023-03-15",
+      "id": 8
+    },
+    {
+      "taskname": "Task8",
+      "description": "Java",
+      "priority": "low",
+      "status": "",
+      "duedate": "2023-03-15",
+      "id": 9
+    },
+    {
+      "taskname": "Task4",
+      "description": "ug2yevjhkwjxsn",
+      "priority": "low",
+      "status": "completed",
+      "duedate": "2023-03-23",
+      "id": 10
+    },
+    {
+      "taskname": "Task4",
+      "description": "ug2yevjhkwjxsn",
+      "priority": "low",
+      "status": "completed",
+      "duedate": "2023-03-23",
+      "id": 11
+    },
+    {
+      "taskname": "Task7",
+      "description": "To do",
+      "priority": "high",
+      "status": "completed",
+      "duedate": "2023-03-24",
+      "id": 12
     }
   ]
 }
