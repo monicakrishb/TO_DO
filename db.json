@@ -1,0 +1,222 @@
+{
+  "user": [
+    {
+      "name": "kjhgf",
+      "email": "monica123@gmail.com",
+      "pass": "kijhgfcdx",
+      "mobile": "ijhuygfds",
+      "id": 1
+    },
+    {
+      "name": "hjk",
+      "email": "monica@gmail.com",
+      "pass": "hhj",
+      "mobile": "b",
+      "id": 2
+    },
+    {
+      "name": "Kuralanban",
+      "email": "kural@gmail.com",
+      "pass": "Kural",
+      "mobile": "9003759065",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "",
+      "mobile": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "",
+      "mobile": "",
+      "id": 5
+    },
+    {
+      "name": "Sindhuja",
+      "email": "sindhu@gmail.com",
+      "pass": "Sindhu@13",
+      "mobile": "9003759065",
+      "id": 6
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "",
+      "mobile": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "jk",
+      "mobile": "",
+      "id": 8
+    },
+    {
+      "name": "Thenu",
+      "email": "7887@gmail.com",
+      "pass": "jk",
+      "mobile": "hjkl",
+      "id": 9
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "",
+      "mobile": "",
+      "id": 10
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "",
+      "mobile": "",
+      "id": 11
+    },
+    {
+      "name": "Sneha",
+      "email": "sneha@gmail.com",
+      "pass": "Sheha@13",
+      "mobile": "9003759065",
+      "id": 12
+    },
+    {
+      "name": "Monica",
+      "email": "monica@gmail.com",
+      "pass": "Moni@13",
+      "mobile": "9003759065",
+      "id": 13
+    },
+    {
+      "id": "Manasa",
+      "name": "K",
+      "password": "Manasa@13",
+      "email": "manasa@gmail.com",
+      "phone": "9003759065",
+      "country": "India",
+      "address": "aspire",
+      "gender": "female"
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "nm,.",
+      "mobile": "",
+      "id": 14
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "",
+      "mobile": "",
+      "id": 15
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "",
+      "mobile": "",
+      "id": 16
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "",
+      "mobile": "",
+      "id": 17
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": "",
+      "mobile": "",
+      "id": 18
+    }
+  ],
+  "task": [
+    {
+      "taskname": "Task1",
+      "description": "React",
+      "priority": "high",
+      "status": "inprogress",
+      "duedate": "2023-03-31",
+      "id": 1
+    },
+    {
+      "taskname": "Task2",
+      "description": "Angular",
+      "priority": "high",
+      "status": "completed",
+      "duedate": "2023-03-24",
+      "id": 2
+    },
+    {
+      "taskname": "Task3",
+      "description": "Python",
+      "priority": "high",
+      "status": "cancelled",
+      "duedate": "2023-03-31",
+      "id": 3
+    },
+    {
+      "taskname": "bnm",
+      "description": "jk",
+      "priority": "high",
+      "status": "inprogress",
+      "duedate": "2023-04-09",
+      "id": 4
+    },
+    {
+      "taskname": "Task6",
+      "description": "Login and Register",
+      "priority": "medium",
+      "status": "completed",
+      "duedate": "2023-03-21",
+      "id": 6
+    },
+    {
+      "taskname": "Task8",
+      "description": "Java",
+      "priority": "low",
+      "status": "",
+      "duedate": "2023-03-15",
+      "id": 8
+    },
+    {
+      "taskname": "Task8",
+      "description": "Java",
+      "priority": "low",
+      "status": "",
+      "duedate": "2023-03-15",
+      "id": 9
+    },
+    {
+      "taskname": "Task4",
+      "description": "ug2yevjhkwjxsn",
+      "priority": "low",
+      "status": "completed",
+      "duedate": "2023-03-23",
+      "id": 10
+    },
+    {
+      "taskname": "Task4",
+      "description": "ug2yevjhkwjxsn",
+      "priority": "low",
+      "status": "completed",
+      "duedate": "2023-03-23",
+      "id": 11
+    },
+    {
+      "taskname": "Task7",
+      "description": "To do",
+      "priority": "high",
+      "status": "completed",
+      "duedate": "2023-03-24",
+      "id": 12
+    }
+  ]
+}
